@@ -28,6 +28,6 @@ const app = createApp(App)
 app.component('v-chart', ECharts)
 app.use(store).use(router).use(VueGtag, {
     property: {
-        id: 'UA-72351393-1',
+        id: 'G-36F812TZ1N',
     },
 }).mount('#app')

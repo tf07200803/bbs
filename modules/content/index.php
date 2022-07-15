@@ -284,7 +284,7 @@ class index {
 	public function loadshop(){
 
         $link_db = pc_base::load_model(list_model);
-        $datas = $link_db->select(array(), 'eqno', 30, 'id desc');
+        $datas = $link_db->select(array(), 'eqno', 60, 'id desc');
         echo json_encode ( $datas ) ;
 
     }
