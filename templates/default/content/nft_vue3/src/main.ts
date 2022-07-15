@@ -22,7 +22,12 @@ declare global {
 }
 import router from './router'
 import store from './store'
+import VueGtag from 'vue-gtag-next';
 
 const app = createApp(App)
 app.component('v-chart', ECharts)
-app.use(store).use(router).mount('#app')
+app.use(store).use(router).use(VueGtag, {
+    property: {
+        id: 'UA-72351393-1',
+    },
+}).mount('#app')
