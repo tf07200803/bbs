@@ -357,13 +357,11 @@ class index {
     }
     public function download2()
     {
-    	echo 'yayaya';
+    	
         $url=$_POST['imgsrc'];
-        phpinfo();
+
         $path='./uploadfile/images/';
         $ch = curl_init();
-        echo $url;
-        die;
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
