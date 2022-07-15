@@ -359,10 +359,11 @@ class index {
     {
     	echo 'yayaya';
         $url=$_POST['imgsrc'];
-        echo $url;
-        die;
+
         $path='./uploadfile/images/';
         $ch = curl_init();
+        echo $url;
+        die;
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
