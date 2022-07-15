@@ -327,7 +327,7 @@ class index {
             $sql = array(
                 'title'=>$title,
                 'intro'=>$intro,
-                //'imgsrc'=>$this->download($imgsrc),
+                'imgsrc'=>$this->download($imgsrc),
                 'link'=>$link,
                 'detail'=>$detail,
                 'eqno'=>$eqno);
@@ -357,7 +357,7 @@ class index {
     }
     public function download2()
     {
-    	
+
         $url=$_POST['imgsrc'];
 
         $path='./uploadfile/images/';

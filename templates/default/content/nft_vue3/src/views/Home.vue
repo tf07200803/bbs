@@ -17,7 +17,7 @@
 								</router-link>
 							</div>
 
-							
+
 
 						</div>
 
@@ -78,10 +78,15 @@ export default defineComponent({
 
         /*testapi(){
             var bodyFormData = new FormData();
-            bodyFormData.set('imgurl', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            bodyFormData.set('title', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            bodyFormData.set('intro', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            bodyFormData.set('imgsrc', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            bodyFormData.set('link', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            bodyFormData.set('detail', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            bodyFormData.set('eqno', 'https://i4.disp.cc/t/s2/et/images_2F5517_2Fd5517415.jpg');
             axios({
                 method: 'post',
-                url: 'index.php?m=content&c=index&a=download',
+                url: 'http://ec2-3-129-92-21.us-east-2.compute.amazonaws.com/bbs/index.php?m=content&c=index&a=download2',
                 data: bodyFormData,
                 headers: { 'Content-Type': 'multipart/form-data' }
             })
@@ -98,7 +103,7 @@ export default defineComponent({
 
         getapi(page){
             var self=this
-            axios.get('index.php?m=content&c=index&a=getorder&page='+page, {
+            axios.get('http://ec2-3-129-92-21.us-east-2.compute.amazonaws.com/bbs/index.php?m=content&c=index&a=getorder&page='+page, {
             }).then(function (response) {
                 var res=response.data.data.data;
                 self.list=res
