@@ -11,13 +11,13 @@
 							<div class="list d-inline-block w-100" v-for="(infor,index) in list" :key="index" :id="'v-'+infor.id">
 								<router-link  :to="{ path: '/content', query: { id: infor.id }}">
 								<!--<div class="float-start listimg" style="background-image: url('./uploadfile/images/{{infor.imgsrc}}.png');"></div>-->
-								<div class="float-start listimg" v-bind:style="{ backgroundImage: 'url(./uploadfile/images/' + infor.imgsrc + '.png)' }"></div>
+								<div class="float-start listimg" v-bind:style="{ backgroundImage: 'url(./uploadfile/images/' + infor.imgsrc + ')' }"></div>
 								<div class="listtitle">{{infor.title}}</div>
 								<div class="listdetail">{{infor.intro}}</div>
 								</router-link>
 							</div>
 
-
+							
 
 						</div>
 
@@ -73,6 +73,28 @@ export default defineComponent({
 
     },
     methods: {
+
+
+
+        /*testapi(){
+            var bodyFormData = new FormData();
+            bodyFormData.set('imgurl', 'https://i4.disp.cc/t/s2/cdn2.ettoday.net/images_2F5517_2Fd5517415.jpg');
+            axios({
+                method: 'post',
+                url: 'index.php?m=content&c=index&a=download',
+                data: bodyFormData,
+                headers: { 'Content-Type': 'multipart/form-data' }
+            })
+                .then(function (response) {
+
+                    console.log(response)
+
+                })
+                .catch(function (response) {
+
+                    console.log(response);
+                });
+		},*/
 
         getapi(page){
             var self=this

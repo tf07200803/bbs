@@ -11,7 +11,7 @@ module.exports = {
     assetsDir: 'assets',
     indexPath:'../../index.html',
     devServer: {
-        proxy: 'http://localhost/forpy/',
+        proxy: 'http://localhost/forpy_git/',
         port: 9999,
         host: '0.0.0.0',
         https: false,
