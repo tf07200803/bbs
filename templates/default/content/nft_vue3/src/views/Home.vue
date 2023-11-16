@@ -103,7 +103,7 @@ export default defineComponent({
 
         getapi(page){
             var self=this
-            axios.get('http://ec2-3-129-92-21.us-east-2.compute.amazonaws.com/bbs/index.php?m=content&c=index&a=getorder&page='+page, {
+            axios.get('http://ec2-3-21-169-225.us-east-2.compute.amazonaws.com/bbs/index.php?m=content&c=index&a=getorder&page='+page, {
             }).then(function (response) {
                 var res=response.data.data.data;
                 self.list=res
