@@ -86,7 +86,7 @@ export default defineComponent({
             bodyFormData.set('eqno', 'https://i4.disp.cc/t/s2/et/images_2F5517_2Fd5517415.jpg');
             axios({
                 method: 'post',
-                url: 'http://ec2-3-129-92-21.us-east-2.compute.amazonaws.com/bbs/index.php?m=content&c=index&a=download2',
+                url: 'http://ec2-3-21-169-225.us-east-2.compute.amazonaws.com/bbs/index.php?m=content&c=index&a=download2',
                 data: bodyFormData,
                 headers: { 'Content-Type': 'multipart/form-data' }
             })
